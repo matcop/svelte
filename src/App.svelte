@@ -2,6 +2,9 @@
   import About from "./components/About.svelte";
   import Text from "./components/Text.svelte";
   import Skills from "./components/Skills.svelte";
+  import Input from "./components/Input.svelte";
+  import Photos from "./components/Photos.svelte";
+  import ButtonCount from "./components/ButtonCount.svelte";
   export let name;
   export let hace;
   let logoSvelte = "https://arepa.s3.amazonaws.com/svelte-logo.png";
@@ -52,6 +55,10 @@
   <h1>{name} {hace}🍊</h1>
   <About />
   <Skills />
+  <Input/>
   <Text anotherText="holitas" />
+  <ButtonCount/>
+  <Photos/>
+
   <img src={logoSvelte} alt="el logo de svelte" />
 </main>

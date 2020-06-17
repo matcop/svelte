@@ -1,4 +1,6 @@
 <script>
+  import Button from "./Button.svelte";
+
   let someText = `Frontend Developer at MatCia.`;
   let count = 0;
   let styles = { darkMode: false };
@@ -34,5 +36,10 @@
     <p>hola darkMode</p>
   {/if}
 
+  <Button text="Click me" {count} on:click={sumar} />
+
   <button on:click={toggle}>Dark Mode</button>
+  
+  <Button text="DarkMode 2" on:click={toggle} />
+
 </div>
